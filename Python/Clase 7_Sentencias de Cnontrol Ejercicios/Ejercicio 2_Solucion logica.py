@@ -8,7 +8,7 @@ la siguiente expresión
 """
 a = 7
 b = 5
-if ((3 + 5 * 8) < 3 and ((-6/3 *4) + 2 < 2) or (a > b):
+if ((3 + 5 * 8) < 3 and ((-6/3 *4) + 2 < 2)) or (a > b):
     print("La expresión es verdadera")
 else:
     print("La expresión es falsa")
@@ -17,6 +17,6 @@ else:
 """
 a = float(input("Digite el valor para a: "))
 b = float(input("Digite el valor para b: "))
-resultado = ((3 + 5 * 8) < 3 and ((-6/3 *4) + 2 < 2) or (a > b):
+resultado = ((3 + 5 * 8) < 3 and ((-6/3 *4) + 2 < 2)) or (a > b):
 print(f"El resultado es: "{resultado})
 """
