@@ -1030,7 +1030,7 @@ PORTAFOLIO
 ## Clase 11 -Portafolio 7
 
 <br>
-Aqui estan todos los comandos y teoria de la decima primeraclase:</br>
+Aqui estan todos los comandos y teoria de la decima primera clase:</br>
 
 ```sh
 Configura tus llaves SSH en local
