@@ -5,7 +5,6 @@ import javax.sound.midi.Soundbank;
 public class HolaMundo {
 
     public static void main(String[] args) {
-        // TODO code application logic here
         /*System.out.println("Hola mundo desde java");
       
         int miVariable = 10;
@@ -304,8 +303,8 @@ public class HolaMundo {
         resultadoT = (numeroT % 2 == 0) ? "Es Par" : "Es Impar";
         System.out.println("resultadoT = " + resultadoT);
         */
-        
-        var x = 5;
+        //Prioridad de los Operadores
+        /*var x = 5;
         var y = 10;
         var z = ++x + y--;
         
@@ -319,7 +318,10 @@ public class HolaMundo {
         
         solucionAritmetica = (4 + 5) * 6 / 3;//4 + 5 = 9 * 6 = 54 / 3 = 18
         System.out.println("solucionAritmetica = " + solucionAritmetica);
+    */
         
+        //Ejercicio: Sacar el perimetro de un triangulo
+        //Ejercicio : El mayor de dos numeros (Operador Ternario)
         
         
         
