@@ -11,4 +11,4 @@ elif nota >= 6 and nota <= 7:
 elif nota >= 0 and nota <= 6:
     print("E")
 else:
-    print("el valor ingresaso es incorrecto")
+    print("El valor ingresaso es incorrecto")

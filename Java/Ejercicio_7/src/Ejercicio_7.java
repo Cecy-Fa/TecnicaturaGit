@@ -7,6 +7,6 @@
  *
  * @author CECILIA
  */
-public class Ejercicio7 {
+public class Ejercicio_7 {
     
 }

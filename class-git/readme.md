@@ -1,7 +1,7 @@
 # *Git Bash*
 
-## Clase 1 
-<br>
+## Clase 1
+
 Aqui estan todos los comandos de la primera clase:</br>
 
 ```sh
@@ -60,9 +60,7 @@ mkdir JavaScript
 
 ## Clase 2
 
-<br>
 Aqui estan todos los comandos de la segunda clase:</br>
-
 
 ```sh
 touch vacio.txt #Crea un archivo con su extención: ESCRIBIR DENTRO
@@ -136,9 +134,9 @@ git commit -m "Mi segundo commit"
 git log historia.txt #Vemos toda la historia de este archivo, el número largo es el hash del commit
 
 ```
+
 ## Clase 3
 
-<br>
 Aqui estan todos los comandos de la tercera clase:</br>
 
 ```sh
@@ -190,9 +188,9 @@ cd ..
 
 cd ..
 ```
+
 ## Clase 4
 
-<br>
 Aqui estan todos los comandos de la cuarta clase:</br>
 
 ```sh
@@ -262,8 +260,7 @@ cd ..
 
 ## Clase 5
 
-<br>
-Aqui está la teoría de la quinta clase:</br> 
+Aqui está la teoría de la quinta clase:</br>
 
 ```sh
 ¿Qué es el staging?
@@ -301,7 +298,6 @@ Podemos tener tantas ramas como queramos, tantos repositorios como queramos, lo 
 
 ## Clase 6
 
-<br>
 Aqui estan todos los comandos de la sexta clase:</br>
 
 ```sh
@@ -418,7 +414,6 @@ cd ..ASD
 
 ## Clase 7 "Portafolio 1"
 
-<br>
 Aqui estan todos los comandos y teoria de la septima clase:</br>
 
 ```sh
@@ -514,9 +509,8 @@ Crear cambios en el archivo creado, donde vamos a hacer varios commits, para ir 
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 ```
 
-## Clase 8 - Portafolio 2
+## Clase 8 "Portafolio 2"
 
-<br>
 Aqui estan todos los comandos y teoria de la octava clase:</br>
 
 ```sh
@@ -583,7 +577,7 @@ La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, co
 
 ```
 
-## Clase 9 - Portafolio 3
+## Clase 9 "Portafolio 3"
 
 Aqui estan todos los comandos y teoria de la novena clase
 
@@ -738,9 +732,8 @@ La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, co
 Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación, todo lo vamos a recibir en el formulario que pronto estará disponible para completar y enviar todo el trabajo terminado.
 ```
 
-## Clase 9 - Portafolio 4
+## Clase 9 "Portafolio" 4
 
-<br>
 Aqui estan todos los comandos y teoria de la novena clase segunda parte:</br>
 
 ```sh
@@ -867,9 +860,8 @@ git checkout master
 git merge segunda #y terminamos con esto
 ```
 
-## Clase 10-A -Portafolio 5
+## Clase 10 -A- "Portafolio 5"
 
-<br>
 Aqui estan todos los comandos y teoria de la decima clase:</br>
 
 ```sh
@@ -998,9 +990,8 @@ git merge master #Ahora pasamos los cambios a la rama second.
 PORTAFOLIO
 ```
 
-## Clase 10-B - Portafolio 6
+## Clase 10 -B- "Portafolio 6"
 
-<br>
 Aqui estan todos los comandos y teoria de la decima primera clase parte:</br>
 
 ```sh
@@ -1027,9 +1018,8 @@ Nota: puedes compartir tu llave pública, pero nunca tu llave privada.
 PORTAFOLIO
 ```
 
-## Clase 11 -Portafolio 7
+## Clase 11 "Portafolio 7"
 
-<br>
 Aqui estan todos los comandos y teoria de la decima primera clase:</br>
 
 ```sh

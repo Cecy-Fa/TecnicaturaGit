@@ -1,11 +1,10 @@
 
 import java.util.Scanner;
-import javax.sound.midi.Soundbank;
 
 public class HolaMundo {
 
     public static void main(String[] args) {
-        /*System.out.println("Hola mundo desde java");
+        /*System.out.println("Hola mundo desde java")
       
         int miVariable = 10;
         System.out.println(miVariable);
@@ -202,13 +201,15 @@ public class HolaMundo {
         varNum1 %= 6; 
         System.out.println("varNum1 = " + varNum1);
          */
-        //Operadores Unarios: Cambio de signo
+        
+        //CLASE 8: Operadores Unarios: Cambio de signo
+        
         /*var varA = 7;
         var varB = -varA;
         System.out.println("varA = " + varA);
         System.out.println("varB = " + varB);// El resultado será un número negativo
 
-        //Operadores de Negacion
+        //Operadores de Negacion/Tipo boolean
         var varC = true; //Esta literal por default en Java es de tipo Boolean
         var varD = !varC; //Aquí esta invirtiendo el valor
         System.out.println("varC = " + varC);
@@ -217,6 +218,7 @@ public class HolaMundo {
         //Operadores Unarios de Incremento : Preincremento
         var varE = 9; //Se va a modificar su valor
         var varF = ++varE; //Símbolo antes de la variable
+        
         //Primero se incrementa la variable y despúes se usa su valor
         System.out.println("varE = " + varE); //Se incrementa en la unidad
         System.out.println("varF = " + varF); //Va a sumar uno
@@ -232,15 +234,15 @@ public class HolaMundo {
         var varJ = --varI;
         System.out.println("varI = " + varI); //La variable ya esta con decremento
         System.out.println("varJ = " + varJ);
-
+        
         //Operadores Unarios de decremento: Postdecremento
-        var varK = 8;
+        /*var varK = 8;
         var varL = varK--; //Primero el valor de la variable, luego queda el decremento
         System.out.println("varK = " + varK); //Aqui va a decrementar en I
         System.out.println("varL = " + varL);  
-         */
+        
         //Operadores de igualdad:
-        /*var aNum = 5;
+        var aNum = 5;
         var bNum = 4;
         var cNum = (aNum == bNum);
         System.out.println("cNum = " + cNum);
@@ -274,7 +276,7 @@ public class HolaMundo {
         } else {
             System.out.println("Es menor de edad");
         }
-         */
+        
         //Operadores Condicionales: AND
         /*var valorA = 7;
         var valorMinimo = 0; //Rango del 0 al 10
@@ -293,7 +295,7 @@ public class HolaMundo {
             System.out.println("Papa puede asistir al juego de su hijo");
         else
             System.out.println("Papa no puede asistir al juego de su hijo");
-        */
+        
         
         //Operador ternario:
         /*var resultadoT = (5 > 8)? "Verdadero": "Falso";
@@ -302,7 +304,8 @@ public class HolaMundo {
         var numeroT = 4;
         resultadoT = (numeroT % 2 == 0) ? "Es Par" : "Es Impar";
         System.out.println("resultadoT = " + resultadoT);
-        */
+         */
+        
         //Prioridad de los Operadores
         /*var x = 5;
         var y = 10;
@@ -318,16 +321,5 @@ public class HolaMundo {
         
         solucionAritmetica = (4 + 5) * 6 / 3;//4 + 5 = 9 * 6 = 54 / 3 = 18
         System.out.println("solucionAritmetica = " + solucionAritmetica);
-    */
-        
-        //Ejercicio: Sacar el perimetro de un triangulo
-        //Ejercicio : El mayor de dos numeros (Operador Ternario)
-        
-        
-        
-        
-        
-        
-    }
-
-}
+         */
+        }
