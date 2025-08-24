@@ -1,14 +1,13 @@
 #Clase 1: Colecciones Parte 1
 
-#Listas Parte 1 (video 1 Python)
-#lista = Ariel, Liliana, Natalia, Osvaldo (conjunto de elemntos)
+#Listas Parte 1 (video 1 Python), se las conoce en otros lenguajes como arreglos o vectores
 
+#lista = Ariel, Liliana, Natalia, Osvaldo (conjunto de elemntos)
 '''nombre = ['Naty', 'Osvaldo', 'Lily', 'Ariel']
 print(nombre)
 print(nombre[0])
 print(nombre[3])
-print(nombre[-1])'''
-
+print(nombre[-1])
 
 #Listas Parte 2 (video 2 Python)
 #Recuperar un rango de la lista
@@ -34,8 +33,13 @@ else:
 #preguntamos cuantos elementos tiene
 print(len(nombres)) #le pasamos como parametro la lista
 
-#Agregamos un elemnto
+#Agregamos un elemento (puede tener varios elementos (booleano, flotante, n° entero, otra lista))
 nombres.append('Marcelo')
+nombres.append([1, 2, 3])
+nombres.append(True)
+nombres.append(10.45)
+nombres.append([4, 5])
+nombres.append(7)
 print(nombres)
 
 #Insertar un elemento en un indice especifico
@@ -184,6 +188,50 @@ diccionario.clear()
 print(diccionario)
 
 #Eliminar diccionario 
-del diccionario #Diccionario se borro
+#del diccionario #Diccionario se borro
 
 #Repaso y más conceptos de Listas (video 5 Python)
+#Agregamos un elemento (puede tener varios elementos (booleano, flotante, n° entero, otra lista))
+nombres.append('Marcelo')
+nombres.append([1, 2, 3])
+nombres.append(True)
+nombres.append(10.45)
+nombres.append([4, 5])
+nombres.append(7)
+print(nombres)'''
+
+#Concatenar listas (video 6 Python)
+lista1 = [1, 2, 3, 1]
+lista2 = [4, 5, 6, 1]
+lista3 = lista1 + lista2 #Concatenación
+print(lista3)
+
+lista3.extend([7, 8, 9, 1])# Funcion para agregar varios elementos a una lista
+print(lista3)
+print(lista3.index(5))#Funcion para ubiacar en que indice esta el valor ingresado
+#print(lista3.index(0)) #esto daria un error por no ser el elemento parte de la lista
+
+#como saber cuamtos valores repetidos hay dentro de una lista
+print(lista3.count(1)) #cuenta cuantos valores iguales hay dentro de la lista
+
+#Para poner el reves una lista
+lista3.reverse()
+print(lista3)
+
+#Para que una lista se multiplique repitiendo sus elemntos (video 7 Python)
+lista3 =lista3 * 2
+print(lista3)
+
+#Métodos de ordenamiento, en  Python es una función 
+lista3.sort() #Ordena los elemntos ascendentemente
+print (lista3)
+lista3.sort(reverse=True) #Ordena los elemntos descendentemente
+print(lista3)
+
+# Repaso de las  TUPLAS (video 8 Python)
+tupla = (4, 'Hola', 6.78, [1, 2, 78], 4, 'Hola') #Puede tener diferentes tipos de datos dentro
+print(tupla)
+
+print(4 in tupla) #Accion booleana, su respuesta es de tipo booleana
+#Lo que podemos usar dentro de tuplas son: index, count, len
+#En tuplas se puede convertir de tupla a lista y de lista a tupla 
