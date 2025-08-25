@@ -17,10 +17,37 @@ public class EjercicioWhile01 {
             contador++;
         }while(contador <= 7);
         
-//Ciclo for ( video 3J)
-        for(var contando = 0; contando <7; contando++){
+//Ciclo for ( video 3J)       
+for(var contando = 0; contando <7; contando++){
         //crear unavariable; Condicion; incremento o decremento
-        System.out.println("contando = " + contando);
+//Palabras break y continue (video 5J)
+            if(contando % 2 == 0){
+                System.out.println("contando = " + contando);
+                break;
+            }
+        }
+
+        for(var contando = 0; contando <7; contando++){
+            if(contando % 2 != 0){
+                continue; //Vamos a la siguiente iteración
+            }
+            System.out.println("contando = " + contando);
+        }
+
+//Etiquetas Labels (video 6J) (Ciclos anidados)
+inicio:
+for(var contando = 0; contando <5; contando++){
+            if(contando % 2 == 0){
+                System.out.println("contando = " + contando);
+                break inicio;
+            }
+        }
+inicio:
+        for(var contando = 0; contando <5; contando++){
+            if(contando % 2 != 0){
+                continue inicio; //Vamos a la siguiente iteración
+            }
+            System.out.println("contando = " + contando);
         }
     }
 }
