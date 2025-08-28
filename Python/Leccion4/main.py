@@ -235,3 +235,56 @@ print(tupla)
 print(4 in tupla) #Accion booleana, su respuesta es de tipo booleana
 #Lo que podemos usar dentro de tuplas son: index, count, len
 #En tuplas se puede convertir de tupla a lista y de lista a tupla 
+
+
+#Clase 3:
+#Ejercicios
+# Los diccionarios pueden almacenar diferente tipos de datos
+diccionario2 = {
+    'Ariel': {'Edad': 40, 'Altura': 1.83},
+    'Osvaldo': [45, 1.85],
+    'Natalia': [35, 1.67]
+}
+print(diccionario2)
+
+# Diccionario seleccionArgentina
+seleccionArgentina = {
+    10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.70, 'Precio': '50 Millones', 'Posicion': 'Extremo Derecho'},
+    11: {'Nombre': 'Ángel Di María', 'Edad': 34, 'Altura': 1.80, 'Precio': '12 Millones', 'Posicion': 'Extremo Derecho'},
+    24: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77, 'Precio': '35 Millones', 'Posicion': 'Media Punta'},
+    19: {'Nombre': 'Nicolás Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio': '3.5 Millones', 'Posicion': 'Defensa Central'},
+    1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio': '3.5 Millones', 'Posicion': 'Portero'}
+}
+
+# Recorrer el diccionario
+# Los diccionarios pueden almacenar diferente tipos de datos
+diccionario2 = {
+    'Ariel': {'Edad': 40, 'Altura': 1.83},
+    'Osvaldo': [45, 1.85],
+    'Natalia': [35, 1.67]
+}
+print(diccionario2)
+
+# Diccionario seleccionArgentina
+seleccionArgentina = {
+    10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.70, 'Precio': '50 Millones', 'Posicion': 'Extremo Derecho'},
+    11: {'Nombre': 'Ángel Di María', 'Edad': 34, 'Altura': 1.80, 'Precio': '12 Millones', 'Posicion': 'Extremo Derecho'},
+    24: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77, 'Precio': '35 Millones', 'Posicion': 'Media Punta'},
+    19: {'Nombre': 'Nicolás Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio': '3.5 Millones', 'Posicion': 'Defensa Central'},
+    1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio': '3.5 Millones', 'Posicion': 'Portero'}
+}
+
+# Recorrer el diccionario
+for llave, valor in seleccionArgentina.items():
+    print(llave, valor)
+
+# Agregar al menos 4 jugadores más
+seleccionArgentina[9] = {'Nombre': 'Julián Álvarez', 'Edad': 22, 'Altura': 1.70, 'Precio': '20 Millones', 'Posicion': 'Delantero'}
+seleccionArgentina[5] = {'Nombre': 'Leandro Paredes', 'Edad': 28, 'Altura': 1.80, 'Precio': '15 Millones', 'Posicion': 'Centrocampista'}
+seleccionArgentina[3] = {'Nombre': 'Cristian Romero', 'Edad': 24, 'Altura': 1.85, 'Precio': '25 Millones
+
+
+# Agregar al menos 4 jugadores más
+seleccionArgentina[9] = {'Nombre': 'Julián Álvarez', 'Edad': 22, 'Altura': 1.70, 'Precio': '20 Millones', 'Posicion': 'Delantero'}
+seleccionArgentina[5] = {'Nombre': 'Leandro Paredes', 'Edad': 28, 'Altura': 1.80, 'Precio': '15 Millones', 'Posicion': 'Centrocampista'}
+seleccionArgentina[3] = {'Nombre': 'Cristian Romero', 'Edad': 24, 'Altura': 1.85, 'Precio': '25 Millones
