@@ -1,6 +1,7 @@
 /*
 EJERCICIO 2: Leer un numero e indicar si es positivo o si es negativo.
-El proceso se repetira hasta que se indroduzca un cero 0
+El proceso se repetira hasta que se indroduzca un cero 0.
+Clase Scanner.
 */
 
 package Ciclos02;
