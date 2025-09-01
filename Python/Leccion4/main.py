@@ -126,7 +126,7 @@ print(planetas)
 del planetas #Al eliminar nos muestra un error
 
 #Diccionario Parte 1 de PYTHON (video 3 Python)
-##Esta compuesto por dos elementos
+##Esta compuesto por dos elementos: se puede hacer en forma de columnas o en filas
 #'Maradona': 10 //Tipo cadena 1ro 'Maradona' y 2do tipo numerico 10
 #dict (key, value)
 diccionario = {
@@ -198,7 +198,7 @@ nombres.append(True)
 nombres.append(10.45)
 nombres.append([4, 5])
 nombres.append(7)
-print(nombres)'''
+print(nombres)
 
 #Concatenar listas (video 6 Python)
 lista1 = [1, 2, 3, 1]
@@ -235,56 +235,168 @@ print(tupla)
 print(4 in tupla) #Accion booleana, su respuesta es de tipo booleana
 #Lo que podemos usar dentro de tuplas son: index, count, len
 #En tuplas se puede convertir de tupla a lista y de lista a tupla 
-
+'''
+from typing import final
 
 #Clase 3:
-#Ejercicios
-# Los diccionarios pueden almacenar diferente tipos de datos
+#Repaso de set o conjunto (video 1 Pyton)
+#Para definir un conjunto grupo de elementos desordenados y su principal caracteristica 
+#es que no pueden haber duplicados dentro de un conjunto, es decir hay valores unicos y puede tener diferentes tipos de datos
+conjunto2 = set()
+conjunto1 = {'bye', }# un conjunto vacio no se puede, debe tener siempre un elemento
+conjunto2.add(7)# dato tipo entero
+conjunto2.add('Hola')# dato tipo cadena
+print(conjunto2)
+conjunto1.add('hola')
+print(conjunto1)
+print(3 not in conjunto1)#Preguntamos si el numero 3 NO estará en el conjunto (nos devuelve un valor booloneano)
+
+#como hacer la igualdad de los conjuntos
+print(conjunto1 == conjunto2)#Nos devuelve como respuesta un booleano
+
+#Operaciones en conjuntos (video 2 Python)
+conjunto3 = conjunto1 | conjunto2 #La linea une los dos conjuntos
+print(conjunto3)
+
+conjunto3 = conjunto1 & conjunto2 #Que elemento tienen en común
+print(conjunto3)
+
+conjunto3 =conjunto1 - conjunto2 #Asigna el valor que esta en el conjunto1 y no en el conjunto2
+print(conjunto3)
+conjunto3 =conjunto2 - conjunto1
+print(conjunto3)
+
+conjunto3 =conjunto1 ^ conjunto2 #Elemento que no comparten o que son modificables entre ambos
+print(conjunto3)
+
+#Aqui preguntamos si un conjunto es un subconjunto dentro de otro (Video 3 Python)
+conjunto3 = conjunto1 | conjunto2
+print(conjunto2.issubset(conjunto3))
+print(conjunto1.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto1))
+
+
+print(conjunto3.issuperset(conjunto1)) #Preguntamos si los elementos del conjunto1 están dentro del 3
+print(conjunto3.issuperset(conjunto2)) #Si es verdadero quiere decir que el conjunto3 es un superconjunto
+print(conjunto2.issuperset(conjunto3))
+
+#como saber si ambos conjuntos son Disconexos, esto es si NO comparten ningún elemento en común
+print(conjunto1.isdisjoint(conjunto2)) #No hay cosas en común
+
+#convertir un conjunto totalmente en inmutable
+conjunto1 = frozenset #Esto hace que el conjunto sea totalmente inmutables
+#No se puede agregar, modificar ni eliminar un elemento del conjunto
+
+#Repaso de diccionario: otro forma de hacerlo en lineas (video 4 Python)
+diccionarioNuevo = {'Azul': 'Blue', 'Rojo': 'Red', 'Verde': 'Green', 'Amarillo': 'Yellow'}
+print(diccionarioNuevo)
+
+#Como eliminar
+del (diccionarioNuevo['Azul'])
+print(diccionarioNuevo)
+
+#Los diccionarios pueden almacenar diferentes tipos de datos "FILAS"
+diccionario2 = {'Cecilia': {'Edad': 39, 'Altura': 1.70}, 'Osvaldo': [45, 1.85], 'Natalia': [35, 1.67]}
+                #Cadena:
+                        #Diccionario:Cadena, entero,cadena, flotante
+                                                          #Cadena: lista (entero y flotante
+                                                                                #Cadena: lista (entero y flotante
+print(diccionario2)
+
+# Recorrer el diccionario
+# Los diccionarios pueden almacenar diferente tipos de datos "COLUMNAS"
 diccionario2 = {
-    'Ariel': {'Edad': 40, 'Altura': 1.83},
+    'Cecilial': {'Edad': 39, 'Altura': 1.70},
     'Osvaldo': [45, 1.85],
     'Natalia': [35, 1.67]
 }
 print(diccionario2)
 
+#(video 5 Pyton)
 # Diccionario seleccionArgentina
 seleccionArgentina = {
     10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.70, 'Precio': '50 Millones', 'Posicion': 'Extremo Derecho'},
     11: {'Nombre': 'Ángel Di María', 'Edad': 34, 'Altura': 1.80, 'Precio': '12 Millones', 'Posicion': 'Extremo Derecho'},
     24: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77, 'Precio': '35 Millones', 'Posicion': 'Media Punta'},
     19: {'Nombre': 'Nicolás Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio': '3.5 Millones', 'Posicion': 'Defensa Central'},
-    1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio': '3.5 Millones', 'Posicion': 'Portero'}
+    1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio': '3.5 Millones', 'Posicion': 'Portero'},
+    23: {'Nombre': 'Emiliano Martinez', 'Edad': 32, 'Altura': 1.95, 'Precio': '20 Millones', 'Posicion': 'Arquero'},
+    4:  {'Nombre': 'Facundo Medina', 'Edad': 26, 'Altura': 1.84, 'Precio': '25 Millones', 'Posicion': 'Lateral izquierdo'},
+    13: {'Nombre': 'Cristian Romero', 'Edad': 27, 'Altura': 1.85, 'Precio': '50 Millones', 'Posicion': 'Defensa central'},
+    16: {'Nombre': 'Nahuel Molina', 'Edad': 27, 'Altura': 1.75, 'Precio': '20 Millones', 'Posicion': 'Lateral derecho'},
+    7:  {'Nombre': 'Rodrigo De Paul', 'Edad': 31, 'Altura': 1.80, 'Precio': '25 Millones', 'Posicion': 'Mediocentro'},
 }
-
-# Recorrer el diccionario
-# Los diccionarios pueden almacenar diferente tipos de datos
-diccionario2 = {
-    'Ariel': {'Edad': 40, 'Altura': 1.83},
-    'Osvaldo': [45, 1.85],
-    'Natalia': [35, 1.67]
-}
-print(diccionario2)
-
-# Diccionario seleccionArgentina
-seleccionArgentina = {
-    10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.70, 'Precio': '50 Millones', 'Posicion': 'Extremo Derecho'},
-    11: {'Nombre': 'Ángel Di María', 'Edad': 34, 'Altura': 1.80, 'Precio': '12 Millones', 'Posicion': 'Extremo Derecho'},
-    24: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77, 'Precio': '35 Millones', 'Posicion': 'Media Punta'},
-    19: {'Nombre': 'Nicolás Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio': '3.5 Millones', 'Posicion': 'Defensa Central'},
-    1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio': '3.5 Millones', 'Posicion': 'Portero'}
-}
-
-# Recorrer el diccionario
+print(seleccionArgentina)
 for llave, valor in seleccionArgentina.items():
     print(llave, valor)
 
 # Agregar al menos 4 jugadores más
-seleccionArgentina[9] = {'Nombre': 'Julián Álvarez', 'Edad': 22, 'Altura': 1.70, 'Precio': '20 Millones', 'Posicion': 'Delantero'}
-seleccionArgentina[5] = {'Nombre': 'Leandro Paredes', 'Edad': 28, 'Altura': 1.80, 'Precio': '15 Millones', 'Posicion': 'Centrocampista'}
-seleccionArgentina[3] = {'Nombre': 'Cristian Romero', 'Edad': 24, 'Altura': 1.85, 'Precio': '25 Millones
+seleccionArgentina[5] = {'Nombre': 'Leandro Paredes', 'Edad': 31, 'Altura': 1.80, 'Precio': '5 Millones', 'Posicion': 'Pivote'},
+seleccionArgentina[8] = {'Nombre': 'Enzo Fernández', 'Edad': 24, 'Altura': 1.78, 'Precio': '75 Millones', 'Posicion': 'Mediocentro'},
+seleccionArgentina[9] = {'Nombre': 'Julián Alvarez', 'Edad': 25, 'Altura': 1.70, 'Precio': '100 Millones', 'Posicion': 'Delantero centro'},
+seleccionArgentina[10] = {'Nombre': 'Lionel Messi', 'Edad': 38, 'Altura': 1.70, 'Precio': '18 Millones', 'Posicion': 'Extremo derecho'},
+seleccionArgentina[11] = {'Nombre': 'Thiago Almada', 'Edad': 24, 'Altura': 1.71, 'Precio': '25 Millones', 'Posicion': 'Mediocentro ofensivo'},
 
+# Mostrar cantidad de jugadores
+print('Tenemos cargados en el diccionario la cantidad de:', end=' ')
+print(len(seleccionArgentina))
 
-# Agregar al menos 4 jugadores más
-seleccionArgentina[9] = {'Nombre': 'Julián Álvarez', 'Edad': 22, 'Altura': 1.70, 'Precio': '20 Millones', 'Posicion': 'Delantero'}
-seleccionArgentina[5] = {'Nombre': 'Leandro Paredes', 'Edad': 28, 'Altura': 1.80, 'Precio': '15 Millones', 'Posicion': 'Centrocampista'}
-seleccionArgentina[3] = {'Nombre': 'Cristian Romero', 'Edad': 24, 'Altura': 1.85, 'Precio': '25 Millones
+print(seleccionArgentina)
+print(seleccionArgentina.values())#Muestra los valores dentro del diccionario
+# Recorrer el diccionario
+for llave in seleccionArgentina: #Forma común para recorrer un diccionario
+   print(llave)
+
+for valor in seleccionArgentina.values():
+    print(valor)
+
+for llave, valor in seleccionArgentina.items():
+    print(llave, valor)
+
+#pilas usando listas (video 6 Pyton)
+pila = [1, 2, 3]
+
+#Agregar elementos a la pila por el final
+pila.append(4)
+pila.append(5)
+print(pila)
+
+#Sacamos elementos desde el final
+#pila.pop()
+#print(pila)
+
+#Quita el ultimo elemento y lo guarda en la variable
+elementoBorrado = pila.pop()
+print(f'Sacamos el elemento {elementoBorrado}')
+print(f'La pila ahora quedo asi: {pila}')
+
+#Colas con listas (video 7 Pyton)
+#estructura de datos de tipo fifo(first input/ first output
+cola = ['Ariel', 'Osvaldo', 'Liliana','Pilar']
+
+#Agregamos elementos al final de la cola
+cola.append('Natalia')
+cola.append('Jose')
+print(cola)
+
+#Sacamos elementos de la cola
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')#Se retira quien ya fue atendido
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')#Se retira quien ya fue atendido
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')#Se retira quien ya fue atendido
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')#Se retira quien ya fue atendido
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')#Se retira quien ya fue atendido
+print(cola)
