@@ -3,7 +3,8 @@
 #Listas Parte 1 (video 1 Python), se las conoce en otros lenguajes como arreglos o vectores
 
 #lista = Ariel, Liliana, Natalia, Osvaldo (conjunto de elemntos)
-'''nombre = ['Naty', 'Osvaldo', 'Lily', 'Ariel']
+'''
+nombre = ['Naty', 'Osvaldo', 'Lily', 'Ariel']
 print(nombre)
 print(nombre[0])
 print(nombre[3])
@@ -235,7 +236,7 @@ print(tupla)
 print(4 in tupla) #Accion booleana, su respuesta es de tipo booleana
 #Lo que podemos usar dentro de tuplas son: index, count, len
 #En tuplas se puede convertir de tupla a lista y de lista a tupla 
-'''
+
 from typing import final
 
 #Clase 3:
@@ -400,3 +401,34 @@ print(cola)
 seRetira = cola.pop(0)
 print(f'Atendido el cliente: {seRetira}')#Se retira quien ya fue atendido
 print(cola)
+'''
+
+# Ejercicio 2: Operaciones de conjuntos con listas
+
+# Creamos dos listas de ejemplo
+lista1 = ["manzana", "pera", "uva", "banana", "kiwi"]
+lista2 = ["pera", "kiwi", "melon", "sandia", "uva"]
+
+print("Lista 1:", lista1)
+print("Lista 2:", lista2)
+
+# Convertimos a conjuntos para evitar repeticiones
+conjunto1 = set(lista1)
+conjunto2 = set(lista2)
+
+# 1. Lista de palabras que aparecen en las listas (unión)
+lista_union = list(conjunto1 | conjunto2)
+print("\n1. Palabras que aparecen en las listas:", lista_union)
+
+# 2. Palabras que aparecen en la primera lista pero no en la segunda (diferencia)
+solo_primera = list(conjunto1 - conjunto2)
+print("2. Palabras solo en la primera lista:", solo_primera)
+
+# 3. Palabras que aparecen en la segunda lista pero no en la primera
+solo_segunda = list(conjunto2 - conjunto1)
+print("3. Palabras solo en la segunda lista:", solo_segunda)
+
+# 4. Palabras que aparecen en ambas listas (intersección)
+en_ambas = list(conjunto1 & conjunto2)
+print("4. Palabras en ambas listas:", en_ambas)
+
