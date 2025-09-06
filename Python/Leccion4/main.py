@@ -1,9 +1,10 @@
+'''
 #Clase 1: Colecciones Parte 1
 
 #Listas Parte 1 (video 1 Python), se las conoce en otros lenguajes como arreglos o vectores
 
 #lista = Ariel, Liliana, Natalia, Osvaldo (conjunto de elemntos)
-'''
+
 nombre = ['Naty', 'Osvaldo', 'Lily', 'Ariel']
 print(nombre)
 print(nombre[0])
@@ -98,7 +99,7 @@ print('\n', cocina)
 #del cocina
 #print(cocina)
 
-#CLASE 2: COLECCIONES PARTE 2
+#CLASE  o Leccion 2: COLECCIONES PARTE 2
 #Tipos Set (video 1 Python); 
 #El orden es aleatorio. Un elemento de tipo set: es una coleccion sin orden y sin indice.
 planetas = {'Martes', 'Jupiter', 'Venus'}
@@ -238,8 +239,8 @@ print(4 in tupla) #Accion booleana, su respuesta es de tipo booleana
 #En tuplas se puede convertir de tupla a lista y de lista a tupla 
 
 from typing import final
-
-#Clase 3:
+'''
+#Clase  o Leccion 3:
 #Repaso de set o conjunto (video 1 Pyton)
 #Para definir un conjunto grupo de elementos desordenados y su principal caracteristica 
 #es que no pueden haber duplicados dentro de un conjunto, es decir hay valores unicos y puede tener diferentes tipos de datos
@@ -319,7 +320,7 @@ print(diccionario2)
 seleccionArgentina = {
     10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.70, 'Precio': '50 Millones', 'Posicion': 'Extremo Derecho'},
     11: {'Nombre': 'Ángel Di María', 'Edad': 34, 'Altura': 1.80, 'Precio': '12 Millones', 'Posicion': 'Extremo Derecho'},
-    24: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77, 'Precio': '35 Millones', 'Posicion': 'Media Punta'},
+    21: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77, 'Precio': '35 Millones', 'Posicion': 'Media Punta'},
     19: {'Nombre': 'Nicolás Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio': '3.5 Millones', 'Posicion': 'Defensa Central'},
     1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio': '3.5 Millones', 'Posicion': 'Portero'},
     23: {'Nombre': 'Emiliano Martinez', 'Edad': 32, 'Altura': 1.95, 'Precio': '20 Millones', 'Posicion': 'Arquero'},
@@ -401,34 +402,10 @@ print(cola)
 seRetira = cola.pop(0)
 print(f'Atendido el cliente: {seRetira}')#Se retira quien ya fue atendido
 print(cola)
-'''
 
-# Ejercicio 2: Operaciones de conjuntos con listas
+#Clase o Leccion 4 (video 2 Py)
+#Recorremos el Diccionario de la seleccion  Argentina
 
-# Creamos dos listas de ejemplo
-lista1 = ["manzana", "pera", "uva", "banana", "kiwi"]
-lista2 = ["pera", "kiwi", "melon", "sandia", "uva"]
-
-print("Lista 1:", lista1)
-print("Lista 2:", lista2)
-
-# Convertimos a conjuntos para evitar repeticiones
-conjunto1 = set(lista1)
-conjunto2 = set(lista2)
-
-# 1. Lista de palabras que aparecen en las listas (unión)
-lista_union = list(conjunto1 | conjunto2)
-print("\n1. Palabras que aparecen en las listas:", lista_union)
-
-# 2. Palabras que aparecen en la primera lista pero no en la segunda (diferencia)
-solo_primera = list(conjunto1 - conjunto2)
-print("2. Palabras solo en la primera lista:", solo_primera)
-
-# 3. Palabras que aparecen en la segunda lista pero no en la primera
-solo_segunda = list(conjunto2 - conjunto1)
-print("3. Palabras solo en la segunda lista:", solo_segunda)
-
-# 4. Palabras que aparecen en ambas listas (intersección)
-en_ambas = list(conjunto1 & conjunto2)
-print("4. Palabras en ambas listas:", en_ambas)
-
+#Seguimos mostrando como recorrer un diccionario con el ciclo for
+for i in seleccionArgentina:
+    print(f'{i} -> {seleccionArgentina[i]}')
