@@ -72,11 +72,6 @@ console.log(fechaNacimiento);
 //FechaNacimiento = 2003;
 //Console.log(fechaNacimiento); //Solo ejecuta el console anterior
 
-
-
-
-
-
 //* Ejercicio 2:Horas del día
 let hora = 15;
 let mensaje;
