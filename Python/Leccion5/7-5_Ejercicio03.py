@@ -1,6 +1,7 @@
-#Ejercicio03: Funcion recursiva
+#Ejercicio03:
+#Clase 5 FUNCIONES RECURSIVAS 3ra Parte (video 5 Py)
 #Imprimir números de 5 a 1 de manera descendente usando funciones recursivas
-#Puede ser cualquier valor positivo, por ejemplo, si pasamo el
+# Puede ser cualquier valor positivo, por ejemplo, si pasamos el
 #valor de 5, debe imprimir:
 #5
 #4
@@ -11,12 +12,12 @@
 #3
 #2
 #1
-#Si se ingresa número negativos no imprime nada
+#Si se ingresa número negativo no imprime nada
 
 def mostrar_descendente(numero):
-    if numero >= 1: 
+    if numero >= 1: #Caso base
         print(numero)
-        mostrar_descendente(numero-1)
+        mostrar_descendente(numero-1) #Caso recursivo
     elif numero == 0:
         return
     elif numero <= 0:
