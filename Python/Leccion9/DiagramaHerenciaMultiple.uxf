@@ -1,0 +1,32 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>60</y><w>160</w><h>140</h></coordinates><panel_attributes>&lt;&lt;FiguraGeométrica&gt;&gt;
+--
++alto
++ancho
+--
++get_alto()
++set_alto()
++get_ancho()
++get_ancho(ancho)
++_str_()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>320</y><w>160</w><h>50</h></coordinates><panel_attributes>&lt;&lt;Cuadrado&gt;&gt;
+--
++área</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>190</y><w>90</w><h>150</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>180</y><w>310</w><h>160</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>290;10;10;140</additional_attributes></element><element><id>UMLNote</id><coordinates><x>210</x><y>0</y><w>220</w><h>50</h></coordinates><panel_attributes>#Clase 9 Parte 5 Herencia Múltiple
+#Diagrama Múltiple UML (video 1 Py)
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>320</y><w>170</w><h>60</h></coordinates><panel_attributes>&lt;&lt;Rectangulo&gt;&gt;
+--
++area()
++__str__()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>180</y><w>90</w><h>160</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>190</y><w>310</w><h>150</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;150;80;290;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>90</y><w>170</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Color&gt;&gt;
+--
++color
+--
++get_color()
++set_color()
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>610</x><y>320</y><w>140</w><h>70</h></coordinates><panel_attributes>#Clase 9 Parte 5 Herencia Múltiple
+#Diagrama Múltiple UML (video 7 Py)
+Ejercicio rectangulo
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>350</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element></diagram>

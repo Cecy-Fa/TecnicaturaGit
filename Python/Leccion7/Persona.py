@@ -1,7 +1,8 @@
 #Clase 9 POO Parte 4 Herencia Tarea
-#Herencia: Tarea (video 3 Py)
+#Clase 9 POO Parte 4 Herencia SOLUCIÓN
+#Herencia: Tarea (video 3 Py) 
 
-class ClasePersona:  # Clase Padre
+class Persona:  # Clase Padre,esta clase hereda de la clase Object
     def __init__(self, nombre, edad):
         self._nombre = nombre
         self._edad = edad
@@ -50,6 +51,8 @@ print(empleado1._nombre)
 print(empleado1._edad)
 print(empleado1._sueldo)
 
+
+#Clase 9 POO Parte 4 Herencia SOLUCIÓN
 # 11.4 Herencia: Tarea: (video 4 Py)
 #Encapsular los atributos y agregar los métodos getters and setters
 #Crear otro objeto, pasar los datos para nombre, edad, y sueldo
