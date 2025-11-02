@@ -1,3 +1,6 @@
+#Clase 11 POO 8 Diseño de clases y Sobrecarga de Operadores
+#Clase Producto (video 1 Py)
+
 class Producto:
     CONTADOR_P = 0
 
@@ -24,7 +27,7 @@ class Producto:
         self._Precio = Precio
 
     def __str__(self):
-        return f"ID: {self._Id}, nombre: {self._Nombre}, precio: {self._Precio}"
+        return f"ID: {self._Id}, nombre: {self._Nombre}, precio: $ {self._Precio}"
 
 
 #pruebas
